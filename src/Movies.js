@@ -12,19 +12,19 @@ function Movie(props) {
         <div className="movie_info-dis">
           <div className="movie_info-box">
             <h3 className="head">Name</h3>
-            <p className="name">{props.name}</p>
+            <p className="para">{props.name}</p>
           </div>
           <div className="movie_info-box">
             <h3 className="head">Genre</h3>
-            <p className="name">{props.genre}</p>
+            <p className="para">{props.genre}</p>
           </div>
           <div className="movie_info-box">
             <h3 className="head">Rating</h3>
-            <p className="name">{props.rating}</p>
+            <p className="para">{props.rating}</p>
           </div>
           <div className="movie_info-box">
             <h3 className="head">premiered</h3>
-            <p className="name">{props.prem}</p>
+            <p className="para">{props.prem}</p>
           </div>
         </div>
       </div>

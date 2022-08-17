@@ -24,12 +24,23 @@
   &:hover {
     background-color: rgba(57, 40, 154, 0.829);
   }
+  @include respond(tab-land) {
+    margin: 0.5rem;
+    padding: 0.3rem;
+  }
+  @include respond(phone) {
+    width: 40%;
+    height: 35%;
+  }
   &_img {
     width: 100%;
     height: 100%;
     &-box {
       height: 60%;
       width: 100%;
+      @include respond(phone) {
+        height: 60%;
+      }
       &::-webkit-scrollbar {
         display: none;
       }
@@ -49,12 +60,32 @@
 }
 .name {
   text-align: center;
+  @include respond(tab-land) {
+    font-size: 1rem;
+  }
+  @include respond(phone) {
+    font-size: 0.8rem;
+  }
+}
+.head {
+  @include respond(tab-land) {
+    font-size: 0.8rem;
+  }
+  @include respond(phone) {
+    font-size: 0.4rem;
+  }
 }
 .para {
   font-size: 0.8rem;
   // align-items: center;
   // padding: 0.2rem 0rem;
   // color: green;
+  @include respond(tab-land) {
+    font-size: 0.5rem;
+  }
+  @include respond(phone) {
+    font-size: 0.4rem;
+  }
 }
 //movies
 .movie {
@@ -62,18 +93,31 @@
   margin: 5%;
   width: 90%;
   min-height: 80vh;
+  @include respond(phone) {
+    margin: 2%;
+  }
   &_info {
     width: 100%;
     // height: 80vh;
     // background-color: bisque;
     display: flex;
-
+    @include respond(phone) {
+      flex-direction: column;
+    }
     &-dis {
       width: 75%;
       height: 100%;
       // background-color: blueviolet;
       padding: 1.5rem;
       margin: 1rem;
+      @include respond(tab-land) {
+        margin: 0rem;
+        padding: 1rem;
+      }
+      @include respond(phone) {
+        // display: none;
+        width: 100%;
+      }
     }
     &-box {
       //   width: 100%;
@@ -88,6 +132,9 @@
       margin: 1rem;
       // background-color: rebeccapurple;
       height: 35vh;
+      @include respond(phone) {
+        width: 85%;
+      }
     }
     &-img {
       height: 100%;
